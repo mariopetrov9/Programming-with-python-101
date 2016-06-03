@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Adding courses</title>
+    </head>
+    <body>
+      <form action="" method="POST">
+      {% csrf_token %}
+
+        <div>
+          <label for="name">Lection name</label>  
+          <div>
+            <input id="name" name="name" type="text" value="{{ new_lecture.name }}" placeholder="{{new_lecture.name}}">
+          </div>
+        </div>
+        <br></br>
+        <div>
+          <label for="week">Week</label>  
+          <div>
+            <input id="week" name="week" type="text" value="{{ new_lecture.week }}" placeholder="{{new_lecture.week}}">
+          </div>
+        </div>
+        <br></br>
+        <div>
+          <label for="course">Course</label>  
+          <div>
+            <input id="course" name="course" type="text" value="{{ new_lecture.course }}" placeholder="{{new_lecture.course}}">
+          </div>
+        </div>
+        <br></br>
+        <div>
+          <label for="url">Url</label>  
+          <div>
+            <input id="url" name="url" type="text" value="{{ new_lecture.url }}" placeholder="{{ new_lecture.url }}">
+          </div>
+        </div>
+        <br></br>
+          <label for="submit"></label>  
+          <div>
+            <button id="submit" name="submit" type="submit">SUBMIT</button>
+          </div>
+        </div>
+
+        <br></br>
+        <div>
+          <div>
+            {{ error }}
+          </div>
+        </div>
+        <br></br>
+      </new_lecture>
+    </body>
+</html>
+

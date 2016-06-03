@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Editing course</title>
+    </head>
+    <body>
+      <form action="" method="POST">
+      {% csrf_token %}
+
+        <div>
+          <label for="name">Course name:</label>  
+          <div>
+          <br>
+            <input id="name" name="name" type="text" value="{{ field.name }}" placeholder="name">
+          </br>
+          </div>
+        </div>
+        <br></br>
+        <div>
+          <label for="description">Course description:</label>  
+          <div>
+          <br>
+            <input id="description" name="description" type="text" value="{{ field.description }}" placeholder="description">
+          </br>
+          </div>
+        </div>
+        <br></br>
+        <div>
+          <label for="start_date">Course start date:</label>  
+          <div>
+          <br>
+            <input id="start_date" name="start_date" type="text" value="{{ field.start_date }}" placeholder="start_date">
+          </br>
+          </div>
+        </div>
+        <br></br>
+        <div>
+          <label for="end_date">Course end date:</label>  
+          <div>
+          <br>
+            <input id="end_date" name="end_date" type="text" value="{{ field.end_date }}" placeholder="end_date">
+          </br>
+          </div>
+        </div>
+        <div>
+        <br></br>
+        <div>
+          <label for="approximation">Approximation:</label>  
+          <div>
+            <br>
+            <input id="approximation" name="approximation" type="text" value="{{ field.approximation }}" placeholder="months">
+            </br>
+          </div>
+        </div>
+        <br></br>
+        <div>
+          <label for="submit"></label>  
+          <div>
+            <br>
+            <button id="submit" name="submit" type="submit">EDIT</button>
+            </br>
+          </div>
+        </div>
+        <br></br>
+      </form>
+    </body>
+</html>
+

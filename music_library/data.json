@@ -1,0 +1,20 @@
+{
+    "shuffle": false,
+    "songs": [
+        {
+            "_Song__title": "Odin",
+            "_Song__length": "33:15",
+            "_Song__artist": "Manowar",
+            "_Song__album": "The Sons of Odin"
+        },
+        {
+            "_Song__title": "Odin2",
+            "_Song__length": "1:30",
+            "_Song__artist": "Manowar2",
+            "_Song__album": "The Sons of Odin2"
+        }
+    ],
+    "name": "Random_play_list",
+    "song_index": 0,
+    "repeat": true
+}

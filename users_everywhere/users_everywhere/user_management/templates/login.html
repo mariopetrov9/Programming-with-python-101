@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+      <form action="/login" method="POST">
+      {% csrf_token %}
+       <h2>Login</h2>
+        <div>
+          <label for="email">Enter email</label>  
+          <div>
+            <input id="email" name="email" type="email" placeholder="email">
+          </div>
+        </div>
+        <div>
+          <label for="password">Enter password</label>  
+          <div>
+            <input id="password" name="password" type="password" placeholder="password">
+          </div>
+        </div>
+        <div>
+          <label for="login"></label>  
+          <div>
+            <button id="login" name="login" type="submit">Login</button>
+          </div>
+        </div>
+        <div>
+          {{error}}
+        </div>
+        <div>
+          {{logged}}
+        </div>
+      </form>
+    </body>
+</html>

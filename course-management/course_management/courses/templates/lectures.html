@@ -1,0 +1,27 @@
+<head>
+	
+</head>
+<body>
+	 <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th><b>Lection ID</b></th>
+        <th><b>Name</b></th>
+        <th><b>Course</b></th>
+        <th><b>Week</b></th>
+        <th><b>Url</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for field in lectures %}
+      <tr>
+        <td>{{ field.lection_id }}</td>
+        <td>{{ field.name }}</td>
+        <td>{{ field.course }}</td>
+        <td>{{ field.week }}</td>
+        <td>{{ field.url }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>

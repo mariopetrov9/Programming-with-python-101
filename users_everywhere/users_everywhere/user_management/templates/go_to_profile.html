@@ -1,0 +1,13 @@
+<head>You are logged as {{ email }}</head>
+<br>
+<br>
+<br>
+
+<body>
+ 	<form action="/profile" method="POST">
+      {% csrf_token %}
+		<div>
+		    <button id="logout" name="logout" type="submit">Logout</button>
+		</div>
+	</form>
+</body>
